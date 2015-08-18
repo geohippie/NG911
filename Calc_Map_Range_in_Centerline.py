@@ -8,12 +8,11 @@
 # Copyright:   (c) allenlee 2015
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
-
+# takes the "L_F_ADD","L_T_ADD","R_F_ADD","R_T_ADD" fields and adds them to a field name MAP_RANGE
+# MAP_RANGE is used for labeling centerlines to easily see ranges of all segments
 import arcpy
-import os
 
 fc = r'\\sncogis\Departments\GIS and Mapping\NGen911\Shawnee_KSNG911N_subFinal\Shawnee_KSNG911N.gdb\NG911\RoadCenterline'
-#workspace = os.path.dirname(fc)
 
 # Start an edit session. Must provide the worksapce.
 edit = arcpy.da.Editor(r'\\sncogis\Departments\GIS and Mapping\NGen911\Shawnee_KSNG911N_subFinal\Shawnee_KSNG911N.gdb')
