@@ -12,10 +12,10 @@
 # MAP_RANGE is used for labeling centerlines to easily see ranges of all segments
 import arcpy
 
-fc = r'\\sncogis\Departments\GIS and Mapping\NGen911\Shawnee_KSNG911N_subFinal\Shawnee_KSNG911N.gdb\NG911\RoadCenterline'
+fc = r'\\sncogis\Departments\GIS and Mapping\NGen911\Shawnee_KSNG911N08062015\Shawnee_KSNG911N_Final.gdb\NG911\RoadCenterline'
 
 # Start an edit session. Must provide the worksapce.
-edit = arcpy.da.Editor(r'\\sncogis\Departments\GIS and Mapping\NGen911\Shawnee_KSNG911N_subFinal\Shawnee_KSNG911N.gdb')
+edit = arcpy.da.Editor(r'\\sncogis\Departments\GIS and Mapping\NGen911\Shawnee_KSNG911N08062015\Shawnee_KSNG911N_Final.gdb')
 
 # Edit session is started without an undo/redo stack for versioned data
 #  (for second argument, use False for unversioned data)
@@ -49,3 +49,5 @@ edit.stopOperation()
 
 # Stop the edit session and save the changes
 edit.stopEditing(True)
+
+Print "Update Done"
