@@ -35,7 +35,7 @@ map_range( !L_T_ADD!, !R_T_ADD!, !R_F_ADD!, !L_F_ADD!)
 ##  Check Advanced
 ##  Parser is Python
 
-def FindLabel ( [L_T_ADD] , [R_T_ADD] , [R_F_ADD] , [L_F_ADD]  ):
+def FindLabel ( [L_T_ADD] , [R_T_ADD] , [R_F_ADD] , [L_F_ADD] ):
     lst = []
     lst.append([L_T_ADD])
     lst.append([R_T_ADD])
