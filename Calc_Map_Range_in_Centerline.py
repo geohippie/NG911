@@ -43,3 +43,22 @@ def FindLabel ( [L_T_ADD] , [R_T_ADD] , [R_F_ADD] , [L_F_ADD] ):
     lst.append([L_F_ADD])
     mrange = str(min(lst)) + ' - ' + str(max(lst))
     return mrange
+
+##---------------LABEL ADDRESS RANGES and Road NAME using LABEL Field -----------------------------
+##  USE INSTEAD of Calculating field
+##  Check Display coded value description
+##  Check Advanced
+##  Parser is Python
+
+## Returns the Street LABEL as well as a Map Range
+
+def FindLabel ([L_T_ADD] ,[R_T_ADD] ,[R_F_ADD] ,[L_F_ADD], [LABEL]):
+    lst = []
+    lst.append([L_T_ADD])
+    lst.append([R_T_ADD])
+    lst.append([R_F_ADD])
+    lst.append([L_F_ADD])
+    mrange = str(min(lst)) + ' - ' + str(max(lst))
+    label = [LABEL] 
+    namerange = label + '  ' + str(mrange)
+    return namerange
