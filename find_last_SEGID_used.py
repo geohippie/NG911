@@ -9,7 +9,7 @@
 # Licence:     Use at your convenience
 #-------------------------------------------------------------------------------
 
-#find the first and last SEGID. Make sure GenerateID value is higher than last SEGID
+#find the first and last SEGID or ADDID. Make sure GenerateID value is higher than last SEGID
 
 streetcursor = arcpy.da.SearchCursor("RoadCenterline","SEGID")
 seglist = []
@@ -18,7 +18,17 @@ for row in streetcursor:
     seglist.append(SEGID)
 
 seglist.sort()
-print "First SEGID =", seglists[0],"Last SEGID =",seglists[-1]
+print "First SEGID =", seglist[0],"Last SEGID =",seglist[-1]
+
+apointcursor = arcpy.da.SearchCursor("AddressPoints","ADDID")
+pointlist = []
+for row in apointcursor:
+    ADDID = int(row[0])
+    pointlist.append(ADDID)
+
+pointlist.sort()
+print "First ADD =", pointlist[0],"Last ADDID =",pointlist[-1]
+
 
 ##testlist = [1,5,8,12,55,0,3,7,66,999,21,75]
 ##segtestlist = []
