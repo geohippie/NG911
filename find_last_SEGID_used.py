@@ -54,4 +54,4 @@ print "First ADD =", pointlist[0],"Last ADDID =",pointlist[-1]
 ##
 ##segtestlist.sort()
 ##print "First SEGID =", segtestlist[0],"Last SEGID =",segtestlist[-1]
-### should print: First SEGID = 0 Last SEGID = 999
+### should print: ID aaa is not a number  First SEGID = 1 Last SEGID = 999
