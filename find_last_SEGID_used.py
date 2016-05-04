@@ -21,7 +21,7 @@ for row in streetcursor:
         SEGID = int(row[0])
         seglist.append(SEGID)
     except:
-        print 'Segment ID ' + SEGID +' is not a number'
+        print 'Segment ID ', SEGID,' is not a number'
         pass
 
 seglist.sort()
@@ -34,7 +34,7 @@ for row in apointcursor:
         ADDID = int(row[0])
         pointlist.append(ADDID)
     except:
-        print 'Point ID ' + ADDID +' is not a number'
+        print 'Point ID ' , ADDID ,' is not a number'
         pass
 
 pointlist.sort()
