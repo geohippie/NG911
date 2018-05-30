@@ -1,0 +1,15 @@
+#By Lee Allen 5/30/218
+#Label expression for Address Points in ArcPro using Python Expression
+
+
+def FindLabel ( [HNO],[UNIT] ):
+    uNIT = [UNIT]
+    hNO = [HNO]
+    try:
+        a = int(uNIT)
+        if a > 0:
+            #print(uNIT)
+            return uNIT
+    except:
+        #print(hNO)
+        return hNO
